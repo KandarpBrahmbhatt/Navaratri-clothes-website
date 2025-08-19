@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Navaratri clothes</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">men</a>
+                <a href="./girl.html"> girl</a>
+                <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Checkout Steps -->
+    <div id="checkout">
+        <div class="checkout-step" id="step1">
+            <h3>Step 1</h3>
+            <input type="text" placeholder="Enter your full name" />
+            <button onclick="nextStep(2)">Next</button>
+        </div>
+        <div class="checkout-step" id="step2">
+            <h3>Step 2</h3>
+            <textarea placeholder="Enter your address"></textarea>
+            <button onclick="nextStep(3)">Next</button>
+        </div>
+        <div class="checkout-step" id="step3">
+            <h3>Step 3</h3>
+            <input type="text" placeholder="Enter your city" />
+            <button onclick="nextStep(4)">Next</button>
+        </div>
+        <div class="checkout-step" id="step4">
+            <h3>Step 4</h3>
+            <input type="text" placeholder="Enter your state" />
+            <button onclick="nextStep(5)">Next</button>
+        </div>
+        <div class="checkout-step" id="step5">
+            <h3>Step 5</h3>
+            <input type="number" placeholder="Enter your pincode" />
+            <button onclick="nextStep(6)">Next</button>
+        </div>
+        <div class="checkout-step" id="step6">
+            <h3>Step 6</h3>
+            <input type="text" placeholder="Enter your country" />
+            <button onclick="nextStep(7)">Next</button>
+        </div>
+        <div class="checkout-step" id="step7">
+            <h3>Step 7</h3>
+            <input type="tel" placeholder="Enter your mobile number" />
+            <button onclick="nextStep(8)">Next</button>
+        </div>
+        <div class="checkout-step" id="step8">
+            <h3>Step 8</h3>
+            <input type="email" placeholder="Enter your email address" />
+            <button onclick="nextStep(9)">Next</button>
+        </div>
+        <div class="checkout-step" id="step9">
+            <h3>Step 9</h3>
+            <textarea placeholder="Write any special instructions"></textarea>
+            <button onclick="nextStep(10)">Next</button>
+        </div>
+        <div class="checkout-step" id="step10">
+            <h3>Step 10</h3>
+            <p>You are about to place your order.</p>
+            <button onclick="nextStep(11)">Place Order</button>
+        </div>
+        <div class="checkout-step" id="step11">
+            <h3>Step 11</h3>
+            <p>Thank you! Your order has been placed.</p>
+            <button onclick="restart()">Restart / Home</button>
+        </div>
+    </div>
+
+    <div class="cardgirl">
+        <div class="head">
+            <h1>Trends <span>Women's Wear</span></h1>
+        </div>
+
+        <div class="card">
+            <div class="crd">
+                <img src="https://ethnicexport.com//images/product/sub_images/2025/07/7b6b020b-770f-475c-9e9d-f9cdf0df7ebe-1-2025-07-30_15_16_38.jpg"
+                    alt="" onclick="showCard(this) ">
+                <div class="txt">
+                    <h3>Trending Girl chaniyacholi</h3>
+                    <p style="padding: 5px 0px;">MRP 3569</p>
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://blog.g3fashion.com/wp-content/uploads/2024/09/newest_multi_color_printed_chaniya_choli_1721112891as2994076_2.webp"
+                    alt="" height="390px" style="object-fit: cover;" onclick="showCard(this) ">
+                <div class="txt">
+                    <h3>treditioan sarara</h3>
+                    <p style="padding: 5px 0px;">MRP 4569</p>
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://myhandicraftindia.com/wp-content/uploads/2024/08/photo_6337053928776120730_y.jpg"
+                    alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Trending chaniyacholi</h3>
+                    <p style="padding: 5px 0px;">MRP 2569</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://images.surferseo.art/9f3911af-f4cb-4c90-bbde-3bf33eeaaa85.jpeg" alt=""
+                    onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Treditional choli</h3>
+                    <p style="padding: 5px 0px;">MRP 4569</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/9s145MyZrWdIAwpU0JYS/product-images/multicolor_viscose_cotton_navratri_lehenga_choli_175283758111022.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>gagra choli</h3>
+                    <p style="padding: 5px 0px;">MRP 4569</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://www.aishwaryadesignstudio.com/content/images/thumbs/0143355_ethnic-multi-and-white-designer-indo-western-navratri-lehenga-choli-for-garba-raas.jpeg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>chaniya choli</h3>
+                    <p style="padding: 5px 0px;">MRP 6569</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/9s145MyZrWdIAwpU0JYS/product-images/rani_silk_navratri_wear_chaniya_choli_ensemble_1754394256as3327850.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Rani silk navratri wear chaniya choli ensemble</h3>
+                    <p style="padding: 5px 0px;">MRP 9548</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://www.anantexports.in/cdn/shop/files/IMG-20240508_133032.jpg?v=1715188666"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Beautiful Designer Navratri Garba Special Chaniya Choli</h3>
+                    <p style="padding: 5px 0px;">MRP 7548</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://m.media-amazon.com/images/I/61qevuYRjuL._SX569_.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Women's Lehenga Choli</h3>
+                    <p style="padding: 5px 0px;">MRP 1574</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://stimg.b-cdn.net/images/500/data/2023y/September/44304/Navratri-Wear-Black-Thread-Work-Viscose-Rayon-Ready-To-Wear-Lehenga-Choli-RAAS10-2366.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Thread Work Lehenga Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹6226</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://cdn.klothtrend.com/imgbook/product/wc/20230826/1693044335258434201.webp"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Navratri Lehenga Choli With Kutchi Work</h3>
+                    <p style="padding: 5px 0px;">MRP ₹4326</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://cdn.dotpe.in/longtail/store-items/6525429/6LZ9RNzB.jpeg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Designer Lahega Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹1326</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://gunjfashion.com/cdn/shop/files/traditional_multicolor_mirror_work_chaniya_choli_navratri_2025_1.jpg?v=1753951806"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Designer Lahega Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹5226</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://resources.indianclothstore.com/productimages/Multicolor-Georgette-Navratri-Chaniya-Choli-1105126072025.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Navratri Chaniya Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹9326</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://designerlehengacholi.com/cdn/shop/products/2112_1_-Copy-Copy.jpg?v=1659443096"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Traditions CottonChaniya Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹2626</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://tapee.in/cdn/shop/files/ThreadRealMirrorViscoseRayonDarkGreenTraditionalLehengaCholi_4.png?v=1752676437"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Green Traditional Lehenga Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹7626</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://tapee.in/cdn/shop/files/WhiteThreadRealMirrorViscoseRayonTrendingNavratriGhagraCholi_1.png?v=1752762291"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Navy Blue Linen Kurta Set</h3>
+                    <p style="padding: 5px 0px;">MRP ₹4626</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://anayadesignerstudio.com/cdn/shop/files/Chaniya-Choli-For-Garba-Online-India_1c2f9ae9-1a8b-46bd-b7e4-f2f274790162.webp?v=1714624014"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Designer Gujrati Chaniya Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹3,599</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://resources.indianclothstore.com/simage/Multicolor-Viscose-Navratri-Chaniya-Choli-1107105082025.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Designer Gujrati Chaniya Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹8,599</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://cdn.dotpe.in/longtail/store-items/6525429/6LZ9RNzB.jpeg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Designer Lahega Choli</h3>
+                    <p style="padding: 5px 0px;">MRP ₹1326</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Full cart  -->
+    <div class="fullPage">
+        <img id="cartImg" src=" " alt="">
+        <div class="cartText">
+            <h1>Trends Offer : Trending Shop <br> Now</h1>
+            <h2>Special Price</h2>
+            <h2>MRP 5200</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+                <button onclick="addToCart()">Add To Cart</button>
+
+            </div>
+            <div class="btns">
+                <button class="relode" onclick="location.reload()">Back </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- add to cart -->
+    <div class="addCart">
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

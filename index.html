@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Navaratri clothes</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">men</a>
+                <a href="./girl.html"> girl</a>
+                <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+
+            </li>
+        </ul>
+    </nav>
+    <!-- ✅ Checkout Steps -->
+    <div id="checkout">
+        <div class="checkout-step" id="step1">
+            <h3>Step 1</h3>
+            <input type="text" placeholder="Enter your full name" />
+            <button onclick="nextStep(2)">Next</button>
+        </div>
+        <div class="checkout-step" id="step2">
+            <h3>Step 2</h3>
+            <textarea placeholder="Enter your address"></textarea>
+            <button onclick="nextStep(3)">Next</button>
+        </div>
+        <div class="checkout-step" id="step3">
+            <h3>Step 3</h3>
+            <input type="text" placeholder="Enter your city" />
+            <button onclick="nextStep(4)">Next</button>
+        </div>
+        <div class="checkout-step" id="step4">
+            <h3>Step 4</h3>
+            <input type="text" placeholder="Enter your state" />
+            <button onclick="nextStep(5)">Next</button>
+        </div>
+        <div class="checkout-step" id="step5">
+            <h3>Step 5</h3>
+            <input type="number" placeholder="Enter your pincode" />
+            <button onclick="nextStep(6)">Next</button>
+        </div>
+        <div class="checkout-step" id="step6">
+            <h3>Step 6</h3>
+            <input type="text" placeholder="Enter your country" />
+            <button onclick="nextStep(7)">Next</button>
+        </div>
+        <div class="checkout-step" id="step7">
+            <h3>Step 7</h3>
+            <input type="tel" placeholder="Enter your mobile number" />
+            <button onclick="nextStep(8)">Next</button>
+        </div>
+        <div class="checkout-step" id="step8">
+            <h3>Step 8</h3>
+            <input type="email" placeholder="Enter your email address" />
+            <button onclick="nextStep(9)">Next</button>
+        </div>
+        <div class="checkout-step" id="step9">
+            <h3>Step 9</h3>
+            <textarea placeholder="Write any special instructions"></textarea>
+            <button onclick="nextStep(10)">Next</button>
+        </div>
+        <div class="checkout-step" id="step10">
+            <h3>Step 10</h3>
+            <p>You are about to place your order.</p>
+            <button onclick="nextStep(11)">Place Order</button>
+        </div>
+        <div class="checkout-step" id="step11">
+            <h3>Step 11</h3>
+            <p>Thank you! Your order has been placed.</p>
+            <button onclick="restart()">Restart / Home</button>
+        </div>
+    </div>
+
+
+    <div class="cardgirl">
+        <div class="head">
+            <h1>Trends <span>Men's Wear</span></h1>
+        </div>
+
+        <div class="card">
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/9b/86/02/9b8602ee928a92cb85f10c6351664a30.jpg" alt=""
+                    onclick="showCard(this) ">
+                <div class="txt">
+                    <h3>Trending Embroidery kurto</h3>
+                    <p style="padding: 5px 0px;">MRP 3569</p>
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/b4/f7/0c/b4f70cf9c06ed7db5abbc4e8aafadaa2.jpg" alt="" height="390px"
+                    style="object-fit: cover;" onclick="showCard(this) ">
+                <div class="txt">
+                    <h3>Trending koti with kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 1569</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/5b/da/66/5bda661ebb09de730a58bca6db4a4450.jpg" alt="" height="390px"
+                    onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Trending new kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 2569</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/86/4c/65/864c65cf3725ec53c9af05c8cb1df74c.jpg" alt="" height="390px"
+                    onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Trending kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 1569</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/6f/ba/82/6fba824028505e12cd5945f0f2403610.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Trending Girl Tops</h3>
+                    <p style="padding: 5px 0px;">MRP 4569</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://assets0.mirraw.com/images/12819447/image_zoom.jpeg?1725968157" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Navy Blue Linen Kurta Set</h3>
+                    <p style="padding: 5px 0px;">MRP 6569</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/t/q/g/xxl-c-men-kurta-lakhnawi-orifab-original-imahent2nuqhk8ma.jpeg?q=70"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Purple kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 9548</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://lotuslehengacholi.com/wp-content/uploads/2023/09/navratri-kurta-for-men-5.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>chidar Kurto</h3>
+                    <p style="padding: 5px 0px;">MRP 7548</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/y/a/a/s-kp-navratri-green-trandtide-original-imahd9gjyyfgjdmy.jpeg?q=7"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>new kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 1574</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/d6/b1/05/d6b10576eec03763b305e2ef3ef2de8c.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Blue kurta</h3>
+                    <p style="padding: 5px 0px;">MRP ₹6226</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/k/u/7/s-men-printed-cotton-blend-straight-kurta-cellux-original-imahfgrqxyhgzu6z.jpeg?q=70"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>kurta with lenga</h3>
+                    <p style="padding: 5px 0px;">MRP ₹4326</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/37/7e/47/377e47c652dd87771a993f9428ed0a20.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Kurta with pyjama</h3>
+                    <p style="padding: 5px 0px;">MRP ₹1326</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://lotuslehengacholi.com/wp-content/uploads/2023/09/navratri-kurta-for-men-3.jpg"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>liner kurta</h3>
+                    <p style="padding: 5px 0px;">MRP ₹5226</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/ff/4d/e4/ff4de4b9fcd77535599a6e4b53e6ccb5.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>green kurta</h3>
+                    <p style="padding: 5px 0px;">MRP ₹2326</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/f0/2b/38/f02b38702666399d18bed9917a4773c1.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Traditions indoveston</h3>
+                    <p style="padding: 5px 0px;">MRP ₹2626</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://kalki.gumlet.io/cdn/shop/files/navy-blue-linen-kurta-set-embellished-with-intricate-kantha-stitching-sg322732-2.jpg?w=1000&"
+                    height="390px" style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>kurta with lenga </h3>
+                    <p style="padding: 5px 0px;">MRP ₹726</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://m.media-amazon.com/images/I/51PTqbIeK6L._SY741_.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>indovation</h3>
+                    <p style="padding: 5px 0px;">MRP ₹4626</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://m.media-amazon.com/images/I/71BbvtqeP3L._SY879_.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Cutton kurta with dupata</h3>
+                    <p style="padding: 5px 0px;">MRP ₹3,599</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/86/4c/65/864c65cf3725ec53c9af05c8cb1df74c.jpg" alt="" height="390px"
+                    onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Trending kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 1569</p>
+
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="crd">
+                <img src="https://i.pinimg.com/736x/6f/ba/82/6fba824028505e12cd5945f0f2403610.jpg" height="390px"
+                    style="object-fit: cover;" alt="" onclick="showCard(this)">
+                <div class="txt">
+                    <h3>Trending green kurta</h3>
+                    <p style="padding: 5px 0px;">MRP 4569</p>
+
+                    <button onclick="startCheckout()">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Full cart  -->
+    <div class="fullPage">
+        <img id="cartImg" src=" " alt="">
+        <div class="cartText">
+            <h1>Trends Offer : Trending Shop <br> Now</h1>
+            <h2>Special Price</h2>
+            <h2>MRP 5200</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+                <button onclick="addToCart()">Add To Cart</button>
+
+            </div>
+            <div class="btns">
+                <button class="relode" onclick="location.reload()">Back </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- add to cart -->
+    <div class="addCart">
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
